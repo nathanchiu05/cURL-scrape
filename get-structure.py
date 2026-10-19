@@ -2,8 +2,8 @@
 
 import pandas as pd
 
-df = pd.read_csv('csv/q1.csv', nrows=100)
-df.to_csv('q1_test.csv', index=False)
+df = pd.read_csv('csv/test.csv', nrows=100)
+df.to_csv('header.csv', index=False)
 
 # print(f"Structure file created: test.csv")
 

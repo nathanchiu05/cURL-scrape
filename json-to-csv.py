@@ -57,5 +57,5 @@ class JSONToCSVConverter:
             print("No convertible data found (expected a dict containing a list).")
 
 
-converter = JSONToCSVConverter("batvia_investments.json")
+converter = JSONToCSVConverter("test.json")
 converter.process_file()
