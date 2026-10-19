@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## 2. Convert the JSON to CSV
 
-Set the filename at the bottom of [json_to_csv.py](json_to_csv.py):
+Set the filename at the bottom of [json-to-csv.py](json-to-csv.py):
 
 ```python
 converter = JSONToCSVConverter("filename.json")
@@ -45,17 +45,17 @@ converter = JSONToCSVConverter("filename.json")
 Then run:
 
 ```bash
-python json_to_csv.py
+python json-to-csv.py
 ```
 
 The CSV is written to `csv/filename.csv`.
 
 ## 3. (Optional) Preview a large CSV
 
-[get_structure.py](get_structure.py) copies the first 100 rows of a CSV into a smaller file so you can check its structure quickly. Edit the input and output paths in the script, then run:
+[get-structure.py](get-structure.py) copies the first 100 rows of a CSV into a smaller file so you can check its structure quickly. Edit the input and output paths in the script, then run:
 
 ```bash
-python get_structure.py
+python get-structure.py
 ```
 
 ## Project layout
@@ -63,6 +63,6 @@ python get_structure.py
 ```
 json/              raw JSON downloaded with curl
 csv/               converted CSV output
-json_to_csv.py     JSON → CSV converter (flattens nested fields and transactions)
-get_structure.py   writes a 100-row sample of a CSV
+json-to-csv.py     JSON → CSV converter (flattens nested fields and transactions)
+get-structure.py   writes a 100-row sample of a CSV
 ```
